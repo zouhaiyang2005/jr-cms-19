@@ -6,7 +6,7 @@ const CourseModel = require('../models/Course');
 const getAllStudents = async (req, res) => {
   const students = await StudentModel.find().exec();
   // res.json({data:students})
-  res.json(students);
+  res.json({msg:"success"});
 };
 
 const getStudentById = async (req, res) => {
