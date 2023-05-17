@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.get('/',(req,res)=>{
-  res.status(200)
+  res.sendStatus(200)
 })
 app.use('/v1', v1Router);
 
